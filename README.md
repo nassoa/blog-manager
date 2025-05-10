@@ -51,13 +51,28 @@ DB_HOST=127.0.0.1
 DB_PORT=3306
 DB_DATABASE=blog_manager
 DB_USERNAME=root
-DB_PASSWORD=
+DB_PASSWORD=******
 ```
 
 7. Exécuter les migrations :
 
 ```bash
 php artisan migrate
+```
+
+8. Configurer l'URL de l'application dans .env :
+
+```env
+APP_URL=http://localhost:8000
+```
+
+9. Configurer l'accès local sur Windows (si nécessaire) :
+
+-   Ouvrez le fichier C:\Windows\System32\drivers\etc\hosts en administrateur
+-   Ajoutez la ligne suivante :
+
+```127.0.0.1 blog-manager.test
+
 ```
 
 ## Lancement de l'application
@@ -70,7 +85,7 @@ Lancer le serveur de développement :
 npm run dev
 ```
 
-L'application sera accessible à l'adresse : [http://localhost:8000](http://localhost:8000)
+L'application sera accessible à l'adresse : [http://blog-manager.test](http://blog-manager.test)
 
 ## Fonctionnalités
 
@@ -78,7 +93,7 @@ L'application sera accessible à l'adresse : [http://localhost:8000](http://loca
 -   Modification d'articles
 -   Suppression d'articles
 -   Affichage de la liste des articles
--   Affichage des détails d'un article
+-   Protection CSRF
 -   Interface minimaliste avec Tailwind CSS
 
 ## Structure technique
