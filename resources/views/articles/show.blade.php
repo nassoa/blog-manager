@@ -16,7 +16,7 @@
             <p class="text-slate-500">Publié le {{ $article->created_at->format('d/m/Y à H:i') }}</p>
         </div>
         
-        <div class="prose max-w-none text-slate-700 mb-8">
+        <div class="prose max-w-none text-slate-700 mb-8 break-words">
             {{ $article->content }}
         </div>
         
