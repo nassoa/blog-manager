@@ -68,7 +68,7 @@ APP_URL=http://blog-manager.test
 
 9. Configurer l'accès local sur Windows (si nécessaire) :
 
--   Ouvrez le fichier C:\Windows\System32\drivers\etc\hosts en administrateur
+-   Ouvrez le fichier C:\Windows\System32\drivers\etc\hosts (en administrateur)
 -   Ajoutez la ligne suivante :
 
 ```plaintext
@@ -108,16 +108,6 @@ Route::resource('articles', ArticleController::class);
 
 ```php
 protected $fillable = ['title', 'content', 'author'];
-```
-
-### Validation
-
-```php
-$request->validate([
-    'title' => 'required|max:255',
-    'content' => 'required',
-    'author' => 'required|max:255'
-]);
 ```
 
 -   Stack : Laravel 10, MySQL, Tailwind CSS
