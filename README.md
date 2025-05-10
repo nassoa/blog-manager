@@ -71,8 +71,8 @@ APP_URL=http://localhost:8000
 -   Ouvrez le fichier C:\Windows\System32\drivers\etc\hosts en administrateur
 -   Ajoutez la ligne suivante :
 
-```127.0.0.1 blog-manager.test
-
+```plaintext
+127.0.0.1 blog-manager.test
 ```
 
 ## Lancement de l'application
