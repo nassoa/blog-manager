@@ -63,7 +63,7 @@ php artisan migrate
 8. Configurer l'URL de l'application dans .env :
 
 ```env
-APP_URL=http://localhost:8000
+APP_URL=http://blog-manager.test
 ```
 
 9. Configurer l'accès local sur Windows (si nécessaire) :
